@@ -1,0 +1,11 @@
+streamlit>=1.38.0
+# Starlette 1.4.0 (2026-08-05) changed GZipResponder's signature and breaks
+# Streamlit's bundled gzip middleware (TypeError: missing 'thread_minimum_size').
+# Pin below that until Streamlit ships a compatible release.
+starlette<1.4.0
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+xlrd>=2.0.1
+plotly>=5.18.0
+pyarrow>=14.0.0
